@@ -15,11 +15,11 @@ This is my personal Neovim configuration for all the platforms I use: Linux and 
 - Npm `sudo apt install npm`
 
 ## Installation
-**_1._** Clone this repository to `~/.config/nvim`
-**_2._** Open neovim on terminal `nvim`
-**_3._** See config file on `~/.config/nvim/init.vim`
-**_3._** Install Plugins `:PlugInstall`, notice the `:`
-**_4._** Quit neovim `:q` and Open It Again 
+1. Clone this repository to `~/.config/nvim`
+2. Open neovim on terminal `nvim`
+3. See config file on `~/.config/nvim/init.vim`
+3. Install Plugins `:PlugInstall`, notice the `:`
+4. Quit neovim `:q` and Open It Again 
 
 ## Issues
 Feel free to submit issues and enhancement requests.
