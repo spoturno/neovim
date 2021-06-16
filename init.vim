@@ -1,4 +1,3 @@
-
 " ==========================
 " Plugins
 " ==========================
@@ -11,7 +10,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
-colorscheme gruvbox
+" colorscheme gruvbox
+
+let g:coc_global_extensions = [ 'coc-tsserver' ]
 
 
 " ==========================
@@ -24,7 +25,7 @@ set hidden                  " Required to keep multiple buffers open
 set nowrap                  " Display long lines as just one line
 set fileencoding=utf-8      " The encoding written to file
 set pumheight=10            " Makes popup menu smaller
-set cmdheight=2             " More space for displaying messages
+set cmdheight=1             " More space for displaying messages
 set splitbelow              " Horizontal splits will automatically be below
 set splitright              " Vertica splits will automatically be to the right
 set t_Co=256                " Suppport 256 colors
@@ -36,8 +37,7 @@ set nobackup                " recommended by coc
 set nowritebackup           " recommended by coc
 set expandtab               " Converts tab to spaces
 set smarttab                " Make tabbing smarted 
-set cursorline              " Enable highlight of the current line
-set showtabline=2
+set showtabline=0
 set laststatus=0            " Always display the status line
 set autoindent              " Good auto indent
 set formatoptions-=cro      " Stop newline continution of comments
@@ -48,7 +48,7 @@ set ruler                   " Shows the cursor positioning always
 
 
 filetype plugin indent on	"required
-highlight ColorColumn ctermbg=0 guibg=lightgrey
+highlight ColorColumn ctermbg=236 guibg=black
 set smartcase
 set hlsearch
 set noerrorbells
@@ -72,7 +72,12 @@ map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 map <leader>pf :CtrlP<CR>
-map <silent> <C-n> :NERDTreeFocus<CR>
+map <silent> <leader>n :NERDTreeFocus<CR>
+
+nmap <silent> gd <Plug>(coc-definition)
+nmap <silent> gy <Plug>(coc-type-definition)
+nmap <silent> gi <Plug>(coc-implementation)
+nmap <silent> gr <Plug>(coc-references)
 
 " remember: use :checkhealth 
 
