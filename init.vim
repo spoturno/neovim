@@ -10,7 +10,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
-" colorscheme gruvbox
+colorscheme gruvbox
 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
@@ -27,10 +27,10 @@ set fileencoding=utf-8      " The encoding written to file
 set pumheight=10            " Makes popup menu smaller
 set cmdheight=1             " More space for displaying messages
 set splitbelow              " Horizontal splits will automatically be below
+set number                  " Shows number line
 set splitright              " Vertica splits will automatically be to the right
 set t_Co=256                " Suppport 256 colors
 set tabstop=4               " Insert 4 spaces for a tab
-set number                  " Line numbers
 set background=dark         " Background dark theme
 set noshowmode              " We don't see thing like --INSERT-- anymore
 set nobackup                " recommended by coc
