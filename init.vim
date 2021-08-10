@@ -1,4 +1,5 @@
 " ==========================
+"
 " Plugins
 " ==========================
 call plug#begin('~/.config/nvim/plugged')
@@ -8,9 +9,11 @@ Plug 'preservim/nerdtree'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jiangmiao/auto-pairs'
+Plug 'bluz71/vim-moonfly-colors'
 call plug#end()
 
-colorscheme gruvbox
+"colorscheme gruvbox
+colorscheme moonfly
 
 let g:coc_global_extensions = [ 'coc-tsserver' ]
 
@@ -32,7 +35,7 @@ set splitright              " Vertica splits will automatically be to the right
 set t_Co=256                " Suppport 256 colors
 set tabstop=4               " Insert 4 spaces for a tab
 set background=dark         " Background dark theme
-set noshowmode              " We don't see thing like --INSERT-- anymore
+"set noshowmode              " We don't see thing like --INSERT-- anymore
 set nobackup                " recommended by coc
 set nowritebackup           " recommended by coc
 set expandtab               " Converts tab to spaces
@@ -72,7 +75,7 @@ map <leader>j :wincmd j<CR>
 map <leader>k :wincmd k<CR>
 map <leader>l :wincmd l<CR>
 map <leader>pf :CtrlP<CR>
-map <silent> <leader>n :NERDTreeFocus<CR>
+nmap <leader>n :NERDTreeFocus<CR>
 
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
